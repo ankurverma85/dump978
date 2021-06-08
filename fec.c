@@ -20,7 +20,7 @@
 #include <stdint.h>
 #include <string.h>
 #include <math.h>
-#include <unistd.h>
+//#include <unistd.h>
 
 #include "uat.h"
 #include "fec/rs.h"
