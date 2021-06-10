@@ -264,7 +264,7 @@ int check_sync_word(uint16_t *phi, uint64_t pattern, int16_t *center)
         }
     }
 
-    fprintf(stdout, "check_sync_word: center=%.0fkHz, errors=%d\n", *center * 2083334.0 / 65536 / 1000, error_bits);
+    //fprintf(stdout, "check_sync_word: center=%.0fkHz, errors=%d\n", *center * 2083334.0 / 65536 / 1000, error_bits);
 
     return (error_bits <= MAX_SYNC_ERRORS);
 }
