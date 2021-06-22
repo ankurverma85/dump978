@@ -24,6 +24,7 @@
 
 #include "uat.h"
 #include "fec.h"
+void dump_raw_message(char updown, uint8_t* data, int len, int rs_errors);
 
 static void make_atan2_table();
 static void read_from_stdin();
@@ -64,7 +65,7 @@ int main(int argc, char **argv)
     return 0;
 }
 
-static void dump_raw_message(char updown, uint8_t *data, int len, int rs_errors)
+static void dump_raw_message1(char updown, uint8_t *data, int len, int rs_errors)
 {
     int i;
 
